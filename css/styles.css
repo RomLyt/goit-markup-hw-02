@@ -9,6 +9,7 @@
     --primary-text: #2e2f42;
     --secondary-text: #434455;
     --accent-color: #4D5AE5;
+    --hover-color: #404BBF;
     --white-text: #FFFFFF;
     --second-white-color: #F4F4FD;
 }
@@ -22,10 +23,19 @@ body {
 
 .list {
     list-style: none;
+    text-decoration: none;
 }
 
 button {
     font-family: inherit;
+    cursor: pointer;
+    border: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
 }
 
 
@@ -42,42 +52,42 @@ button {
 .logo-white {color: var(--second-white-color);}
 .logo .logo-dark:hover,
 .logo .logo-dark:focus {
-    color: var(--accent-color);
+    color: var(--hover-color);
 }
 .logo .logo-white:hover,
 .logo .logo-white:focus {
-    color: var(--accent-color);
+    color: var(--hover-color);
 }
 .logo:hover,
 .logo:focus {
-    color: var(--accent-color);
+    color: var(--hover-color);
 }
 
 /* Навігація контакти */
-.navigation .item {
+.nav-link {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--primary-text);
 }
-.navigation .item:hover,
-.navigation .item:focus {
-    color: var(--accent-color);
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--hover-color);
 }
-.navigation .item.current {
+.current {
     color: var(--accent-color);
 }
 
-.contacts .item {
+.con-link {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--secondary-text);
 }
-.contacts .item:hover,
-.contacts .item:focus {
-    color: var(--accent-color);
+.con-link:hover,
+.con-link:focus {
+    color: var(--hover-color);
 }
 
 /* ***** Main page ***** */
@@ -97,6 +107,11 @@ button {
 .hero-button {
     color: var(--white-text);
     background-color: var(--accent-color);
+
+}
+.hero-button:hover,
+.hero-button:focus {
+    background-color: var(--hover-color);
 }
 
 /* Feature */
