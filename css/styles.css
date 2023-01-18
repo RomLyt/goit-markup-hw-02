@@ -50,18 +50,6 @@ button {
 }
 .logo-dark {color: var(--primary-text);}
 .logo-white {color: var(--second-white-color);}
-.logo .logo-dark:hover,
-.logo .logo-dark:focus {
-    color: var(--hover-color);
-}
-.logo .logo-white:hover,
-.logo .logo-white:focus {
-    color: var(--hover-color);
-}
-.logo:hover,
-.logo:focus {
-    color: var(--hover-color);
-}
 
 /* Навігація контакти */
 .nav-link {
